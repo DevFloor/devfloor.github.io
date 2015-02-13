@@ -714,8 +714,8 @@
 		{
 			display: inline-block;
 			position: relative;
-			padding-bottom: 5em;
-			margin-bottom: 2.75em;
+			padding-bottom: 2em;
+			margin-bottom: 0em;
 			cursor: default;
 		}
 		
@@ -752,7 +752,7 @@
 				left: 50%;
 				bottom: 0.65em;
 				width: 1px;
-				height: 4.35em;
+				height: 1.4em;
 				background: #666;
 				margin-left: -0.5px;
 			}
@@ -910,7 +910,7 @@
 
 		.main > .content
 		{
-			padding: 6em 0 6em 0;
+			padding: 3em 0 3em 0;
 		}
 
 			.main > .content > .container
@@ -939,6 +939,11 @@
 							url('images/overlay.png'),
 							linear-gradient(45deg, #b39c68, #a56365, #412e4c);
 			}
+			.main > .content.style1 section p { 
+				font-weight: 300; font-style: italic; 
+				color: white; 
+				line-height: 1.5em 
+			}
 
 			.main > .content.style2
 			{
@@ -946,6 +951,10 @@
 							url('images/bgbl.svg') bottom left no-repeat,
 							url('images/overlay.png'),
 							linear-gradient(45deg, #384955, #655361, #85505f);
+			}
+			.main > .content.style2 section ul li {
+				color: white;
+				line-height: 50px;
 			}
 
 			.main > .content.style3
