@@ -15,6 +15,7 @@
 	body
 	{
 		background: #F8F8F8;
+		-webkit-font-smoothing: antialiased;
 	}
 
 		body.is-loading *
@@ -833,7 +834,7 @@
 		
 			#header header h1
 			{
-				font-size: 4.25em;
+				font-size: 1.25em;
 				line-height: 1.25em;
 				margin-bottom: 0;
 				font-weight:bold;
@@ -855,7 +856,25 @@
 			padding-top: 1.5em;
 			font-weight:bold;
 		}
-	
+		
+		.logo {
+			max-width: 500px;
+			margin-bottom: 30px;
+		}
+
+/*good to have classes*/
+.center-block {
+	margin-left: auto;
+	margin-right: auto;
+}
+.img-responsive {
+	display: block;
+	max-width: 100%; /* Part 1: Set a maximum relative to the parent */
+	height: auto; /* Part 2: Scale the height according to the width, otherwise you get stretching */
+}
+.scrolly {
+	cursor: pointer; /*because the pointer is not there sometimes in chrome*/
+}
 /*********************************************************************************/
 /* Main Sections                                                                 */
 /*********************************************************************************/
@@ -906,7 +925,11 @@
 			{
 				background: #433;
 			}
-			
+
+			/*more gradients*/
+			/*linear-gradient(45deg, #006c27, #003639, #001540);*/
+			/*linear-gradient(45deg, #fbfacf, #89ffe7, #97cfff);*/
+
 			.main > .content.style1
 			{
 				background:	url('images/bgtr.svg') top right no-repeat,
